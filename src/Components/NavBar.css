@@ -1,0 +1,16 @@
+.nav-active {
+  color: rgb(40, 131, 128) !important;
+  border-bottom: solid 1px rgb(40, 131, 128);
+}
+
+.hover:hover::after {
+  background-color: rgba(163, 163, 163, 0.2);
+  border-radius: 10px;
+  /* border-bottom: solid 2px yellow; */
+  /* color: yellow; */
+}
+
+.font {
+  font-size: larger;
+  font-weight: 700;
+}
