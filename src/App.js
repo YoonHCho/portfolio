@@ -6,6 +6,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import SharedPage from "./Components/SharedPage";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Tech from "./Components/Tech";
+import Projects from "./Components/Projects";
 
 // custom hook to share the useEffect with other components
 export const useSharedEffect = () => {
@@ -64,6 +66,8 @@ const App = () => {
           <Route path="/" element={<SharedPage />}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/technologies" element={<Tech />} />
+            <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>
       </HashRouter>

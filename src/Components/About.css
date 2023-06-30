@@ -1,7 +1,45 @@
 img {
-  width: 250px;
-  height: 250px;
+  width: 160px;
+  height: 540px;
   object-fit: none;
-  object-position: 64% 65%;
-  border-radius: 50%;
+}
+
+.border-radius {
+  border-radius: 35px;
+}
+
+.pic {
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 75px;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.links {
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 380px) {
+  img {
+    width: 100px;
+    height: auto;
+  }
+  .about {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+      position: relative;
+      top: 75px;
+    }
 }

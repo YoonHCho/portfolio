@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const SharedPage = () => {
   return (
     <>
       <NavBar />
-      <div>This is shared</div>
-      <p>shared paragraph</p>
       <Outlet />
+      <Footer />
     </>
   );
 };
