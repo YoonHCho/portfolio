@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import About from "./About";
+import Tech from "./Tech";
+import Projects from "./Projects";
+import Footer from "./Footer";
 import { useSharedEffect } from "../App";
 
 const Home = () => {
@@ -29,103 +32,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="hidden">Home</div>
-      <About className="hidden" />
-      <div className="hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-      </div>
-      <div className="hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-      </div>
-      <div className="hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-      </div>
-      <div className="hidden">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum dignissimos sequi a, voluptates aperiam atque possimus natus
-          eligendi veniam.
-        </p>
+      <div className="container ">
+        <About />
+        <Tech />
+        <Projects />
       </div>
     </>
   );

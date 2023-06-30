@@ -8,10 +8,10 @@ const style = {
 };
 
 const NavBar = () => {
-  const navigate = ["HOME", "ABOUT", "PROJECTS"];
+  const navigate = ["HOME", "ABOUT", "TECHNOLOGIES", "PROJECTS"];
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light pd mb-3 font">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light pd mb-5 font">
         <div className="container">
           {/* <NavLink className="navbar-brand" to="/">
              <img className="logo-height img-fluid" src={LLLogo} alt="Little Lemon Logo" />
@@ -29,11 +29,12 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup"> */}
           <div className="navbar-nav mx-auto">
-            {navigate.map(ele => {
+            {navigate.map((ele, index) => {
               return (
                 <NavLink
                   to={ele === "HOME" ? "/" : `/${ele.toLowerCase()}`}
                   className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)}
+                  key={index}
                 >
                   {ele.toUpperCase()}
                 </NavLink>
