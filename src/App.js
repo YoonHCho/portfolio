@@ -1,8 +1,6 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useRef } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-// import NavBar from "./Components/NavBar";
 import SharedPage from "./Components/SharedPage";
 import Home from "./Components/Home";
 import About from "./Components/About";

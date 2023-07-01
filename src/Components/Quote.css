@@ -1,0 +1,15 @@
+.steve {
+  width: 100%;
+  height: 200px;
+  background: url("../Assets/quote.jpg") no-repeat center / cover;
+  border-radius: 10%;
+}
+
+@media screen and (min-width: 445px) {
+  .steve {
+      width: 100%;
+      height: 350px;
+      background: url("../Assets/quote.jpg") no-repeat center / cover;
+      border-radius: 15px;
+    }
+}

@@ -1,12 +1,12 @@
 import React from "react";
-// import pic from "../Assets/profile.jpg";
 import pic1 from "../Assets/profile1.jpg";
 import pic2 from "../Assets/profile2.jpg";
 import "./About.css";
 import { useSharedEffect } from "../App";
 
 const About = () => {
-  const { observerRef } = useSharedEffect();
+  // const { observerRef } = useSharedEffect();
+  useSharedEffect();
 
   return (
     <>
@@ -16,18 +16,10 @@ const About = () => {
             <div className="col-md col-lg-6 text-center">
               <div className="">
                 <img src={pic1} alt="me" className="img-fluid border-radius" />
-                <img src={pic2} alt="me" className="img-fluid pic border-radius" /> {/*me pic*/}
+                <img src={pic2} alt="me" className="img-fluid pic border-radius" />
               </div>
-              {/* <div className="pic"> */}
-              {/* </div> */}
             </div>
-            {/* <div className="col-sm-3 px-2">
-              <img src={pic1} alt="me" className="img-fluid" />
-            </div>
-            <div className="col-sm-3 pic">
-              <img src={pic2} alt="me" className="img-fluid" />
-            </div> */}
-            <div className="col-md col-lg-5 me about">
+            <div className="col-md col-lg-6 me about">
               <h2 className="text-center">About Me</h2>
               <div className="text-center mb-3">
                 <a href="https://www.linkedin.com/in/yoonhcho/" target="_blank" rel="noreferrer" className="mr-1">
