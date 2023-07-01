@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Home.css";
 import About from "./About";
 import Tech from "./Tech";
 import Projects from "./Projects";
-import Footer from "./Footer";
+import Quote from "./Quote";
 import { useSharedEffect } from "../App";
 
 const Home = () => {
-  const { observerRef } = useSharedEffect();
+  // const { observerRef } = useSharedEffect();
+  useSharedEffect();
   // const observerRef = useRef(null);
 
   // useEffect(() => {
@@ -34,6 +35,7 @@ const Home = () => {
     <>
       <div className="container ">
         <About />
+        <Quote />
         <Tech />
         <Projects />
       </div>

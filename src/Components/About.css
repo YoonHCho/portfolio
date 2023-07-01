@@ -4,6 +4,10 @@ img {
   object-fit: none;
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 .border-radius {
   border-radius: 35px;
 }
